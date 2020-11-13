@@ -1,7 +1,7 @@
 {{ 
     config(materialized="view") }}
 
-create table demofromdbt(int id, varchar employee_name, varchar department, int age);
+create table demofromdbt(number id, varchar employee_name, varchar department, number age);
 insert into demofromdbt values(10,"Alex","IT",26);
 insert into demofromdbt values(11,"Casey","Sales",23);
 insert into demofromdbt values(12,"Robert","CRM",32);
