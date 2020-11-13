@@ -19,7 +19,7 @@
 )*/
 
 select *
-from SAMPLE_TABLE where id = 1
+from SAMPLE_TABLE
 
 /*
     Uncomment the line below to remove records with null `id` values
