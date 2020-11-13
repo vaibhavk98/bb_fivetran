@@ -7,18 +7,19 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized="view") }}
+{{} 
+    config(materialized="view") }}
 
-with source_data as (
+/*with source_data as (
 
     select 1 as id
     union all
     select null as id
 
-)
+)*/
 
 select *
-from source_data
+from SAMPLE_TABLE where id = 1
 
 /*
     Uncomment the line below to remove records with null `id` values
