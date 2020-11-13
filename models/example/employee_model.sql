@@ -1,5 +1,5 @@
-{{ 
-    config(materialized="view") }}
+
+{{config(materialized="view") }}
 
 create table demofromdbt(id int,employee_name varchar,department varchar,age int);
 insert into demofromdbt values(10,'Alex','IT',26);
