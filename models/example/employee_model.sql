@@ -1,7 +1,7 @@
 
 {{ config(materialized="view") }}
 
-drop table if exists demofromdbt;
+/*drop table if exists demofromdbt;*/
 create table demofromdbt(id int,employee_name varchar,department varchar,age int);
 insert into demofromdbt values(10,'Alex','IT',26);
 insert into demofromdbt values(11,'Casey','Sales',23);
