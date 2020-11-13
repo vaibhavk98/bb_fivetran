@@ -1,5 +1,5 @@
 
-{{ config(materialized="persistent_table" ,retain_previous_version_flg=true ,migrate_data_over_flg=true) }}
+{{ config(materialized="view") }}
 
 drop table if exists demofromdbt;
 create table demofromdbt(id int,employee_name varchar,department varchar,age int);
