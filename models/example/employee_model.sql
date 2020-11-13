@@ -1,5 +1,5 @@
 {{ 
-    config(materialized="view") }}
+    config(materialized="table") }}
 
 create table demofromdbt(int id, varchar employee_name, varchar department, int age)
 insert into demofromdbt values(10,"Alex","IT",26)
