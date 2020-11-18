@@ -19,3 +19,18 @@ models:
             tests:
                 - unique
                 - not_null
+
+
+models:
+ - name: DEMO_DB
+   description: 'database in snowflake'
+   database: DEMO_DB
+   schema: PRIVATE
+   tables:
+     - name: DEMOTABLESOURCE
+       description: 'test table'
+       columns:
+        - name: ID
+        - name: A
+        - name: B
+        - name: C
